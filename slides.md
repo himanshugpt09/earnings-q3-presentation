@@ -46,3 +46,6 @@ df = (pd.read_csv("q3.csv")
         .assign(growth=lambda d: d.revenue.pct_change())
         .query("segment != 'Legacy'"))
 print(df.describe())
+```
+email: 24f1002302@ds.study.iitm.ac.in
+
