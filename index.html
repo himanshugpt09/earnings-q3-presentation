@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q3 Earnings — Interactive Deck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <!-- Theme (choose one) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
+  <!-- Code syntax highlighting theme (highlight.js) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/atom-one-dark.min.css">
+
+  <style>
+    .subtitle { opacity:.85; font-size:1.1rem }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <!-- Title -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <p class="subtitle">Interactive presentation with RevealJS</p>
+      <p><strong>Contact:</strong> 24f1002302@ds.study.iitm.ac.in</p>
+      <aside class="notes">
+        Welcome stakeholders. Use arrow keys (or click) to navigate. Press <kbd>S</kbd> for speaker view.
+      </aside>
+    </section>
+
+    <!-- Markdown slide(s) loaded from slides.md -->
+    <section data-markdown="slides.md" data-separator="^---$" data-separator-vertical="^--$" data-charset="utf-8"></section>
+  </div>
+</div>
+
+<!-- Reveal.js core + plugins -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath.KaTeX ],
+    // Optional: center: true, transition: 'slide'
+  });
+</script>
+</body>
+</html>
