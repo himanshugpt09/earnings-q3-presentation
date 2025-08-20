@@ -18,65 +18,71 @@
 </head>
 <body>
   <script>
-
-    const email = 24f1002302@ds.study.iitm.ac.in;
-
+    const email = "24f1002302@ds.study.iitm.ac.in";
     document.write('<p>Prepared by: ' + email + '</p>');
+  </script>
 
-</script>
-
-<noscript>
-
+  <noscript>
     <p>Prepared by: your_email@ds.study.iitm.ac.in</p>
+  </noscript>
 
-</noscript>
-<div class="reveal">
-  <div class="slides">
-    <!-- Title -->
-    <section>
-      <h1>Quarterly Earnings Report</h1>
-      <p class="subtitle">Interactive presentation with RevealJS</p>
-      <p><strong>email:</strong>24f1002302@ds.study.iitm.ac.in</p>
-      <aside class="notes">
-        Welcome stakeholders. Use arrow keys (or click) to navigate. Press <kbd>S</kbd> for speaker view.
-      </aside>
-    </section>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section>
+        <h1 class="fragment fade-in">Quarterly Earnings Report</h1>
+        <p class="subtitle fragment grow">Interactive presentation with RevealJS</p>
+        <p class="fragment highlight-current-blue"><strong>email:</strong> 24f1002302@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Welcome stakeholders. Use arrow keys (or click) to navigate. Press <kbd>S</kbd> for speaker view.
+        </aside>
+      </section>
 
-    <!-- Markdown slide(s) loaded from slides.md -->
-    <section data-markdown="slides.md" data-separator="^---$" data-separator-vertical="^--$" data-charset="utf-8"></section>
+      <!-- Example Highlights Slide -->
+      <section>
+        <h2>Q3 Highlights</h2>
+        <ul>
+          <li class="fragment fade-in">Revenue grew 12% year-over-year</li>
+          <li class="fragment grow">Operating margin improved by 3%</li>
+          <li class="fragment highlight-current-blue">Net income reached $45M</li>
+        </ul>
+      </section>
+
+      <!-- Markdown slide(s) loaded from slides.md -->
+      <section data-markdown="slides.md" 
+               data-separator="^---$" 
+               data-separator-vertical="^--$" 
+               data-charset="utf-8"></section>
+    </div>
   </div>
-</div>
-<div class="footer">
-  24f1002302@ds.study.iitm.ac.in
-</div>
 
-<style>
-.footer {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  font-size: 14px;
-  color: gray;
-}
-</style>
+  <div class="footer">
+    24f1002302@ds.study.iitm.ac.in
+  </div>
 
+  <style>
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
 
-<!-- Reveal.js core + plugins -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+  <!-- Reveal.js core + plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
 
-<script>
-  Reveal.initialize({
-    hash: true,
-    plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath.KaTeX ],
-    // Optional: center: true, transition: 'slide'
-  });
-</script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath.KaTeX ],
+      // Optional: center: true, transition: 'slide'
+    });
+  </script>
 </body>
 </html>
-
-
-
