@@ -47,6 +47,7 @@ df = (pd.read_csv("q3.csv")
         .query("segment != 'Legacy'"))
 print(df.describe())
 ```
-24f1002302@ds.study.iitm.ac.in
+Email: **[24f1002302@ds.study.iitm.ac.in](mailto:24f1002302@ds.study.iitm.ac.in)**
+
 
 
